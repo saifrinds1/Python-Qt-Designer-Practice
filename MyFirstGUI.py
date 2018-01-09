@@ -64,6 +64,7 @@ class Ui_MainWindow(object):
         self.actionSEND.setText(_translate("MainWindow", "SEND"))
 
 
+"""[summary]
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
@@ -73,3 +74,4 @@ if __name__ == "__main__":
     MainWindow.show()
     sys.exit(app.exec_())
 
+"""
