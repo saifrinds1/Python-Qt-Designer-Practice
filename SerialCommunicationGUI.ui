@@ -10,16 +10,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>391</width>
-    <height>289</height>
+    <width>210</width>
+    <height>242</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string/>
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../../Pictures/serial-port-icon.png</normaloff>../../Pictures/serial-port-icon.png</iconset>
+    <normaloff>../../../Pictures/serial-port-icon.png</normaloff>../../../Pictures/serial-port-icon.png</iconset>
   </property>
   <property name="autoFillBackground">
    <bool>false</bool>
@@ -30,6 +36,9 @@
     <height>48</height>
    </size>
   </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
   <property name="dockNestingEnabled">
    <bool>false</bool>
   </property>
@@ -37,52 +46,29 @@
    <widget class="QPushButton" name="btnConnect">
     <property name="geometry">
      <rect>
-      <x>12</x>
-      <y>9</y>
-      <width>75</width>
-      <height>23</height>
+      <x>135</x>
+      <y>5</y>
+      <width>70</width>
+      <height>25</height>
      </rect>
     </property>
     <property name="text">
      <string>Connect</string>
     </property>
-   </widget>
-   <widget class="QLineEdit" name="etxtSerialPortName">
-    <property name="geometry">
-     <rect>
-      <x>92</x>
-      <y>10</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="inputMask">
-     <string/>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="echoMode">
-     <enum>QLineEdit::NoEcho</enum>
-    </property>
-   </widget>
-   <widget class="QListView" name="listView">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>40</y>
-      <width>371</width>
-      <height>191</height>
-     </rect>
+    <property name="iconSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="btnSend">
     <property name="geometry">
      <rect>
-      <x>307</x>
-      <y>239</y>
-      <width>75</width>
-      <height>23</height>
+      <x>135</x>
+      <y>190</y>
+      <width>70</width>
+      <height>25</height>
      </rect>
     </property>
     <property name="text">
@@ -92,10 +78,10 @@
    <widget class="QLineEdit" name="etxtMsg">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>240</y>
-      <width>291</width>
-      <height>20</height>
+      <x>5</x>
+      <y>190</y>
+      <width>125</width>
+      <height>25</height>
      </rect>
     </property>
     <property name="inputMask">
@@ -105,7 +91,44 @@
      <string/>
     </property>
     <property name="echoMode">
-     <enum>QLineEdit::NoEcho</enum>
+     <enum>QLineEdit::Normal</enum>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>35</y>
+      <width>200</width>
+      <height>150</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>90</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refresh">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>5</y>
+      <width>30</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../Pictures/refresh.png</normaloff>../../../../Pictures/refresh.png</iconset>
     </property>
    </widget>
   </widget>
@@ -114,7 +137,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>391</width>
+     <width>210</width>
      <height>21</height>
     </rect>
    </property>
