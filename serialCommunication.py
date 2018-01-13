@@ -11,7 +11,7 @@ serialConnection = SerialMethods.Connection(baudrate=9600)
 
 def threaded():
     while True:
-        sleep(.001)
+        sleep(.00001)
         MainWindowGUI.label.setText('Connected to {}'.format(serialConnection.isConnectedToPort()))
         recv = serialConnection.read()
         if  recv is not None:
